@@ -1,0 +1,195 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation bar */
+
+#navbar {
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    background-color: #26242b;
+    top: 3px;
+}
+
+
+/* for logo image */
+
+#logo img {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 70px;
+    /* border: 2px solid #26242b; */
+    border-radius: 60px;
+    padding: 0px;
+    margin: 22px 20px;
+}
+
+
+/* for navigation list bar */
+
+#navbar ul {
+    display: flex;
+    font-size: 29px;
+    align-items: center;
+}
+
+
+/* for list styling */
+
+#navbar ul li {
+    list-style: none;
+}
+
+
+/* for NAVBAR list element */
+
+#navbar ul li a {
+    color: rgb(251, 247, 247);
+    display: block;
+    margin: 22px 11px;
+    padding: 16px 13px;
+    border-radius: 20px;
+    font-family: 'Potta One', cursive;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 45px;
+}
+
+#home {
+    align-items: center;
+    text-align: center;
+    justify-content: center center center/cover;
+    margin: 127px 62px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('pizza.jpg.jpg') no-repeat center center/cover;
+    /* height: 1200px; */
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1 {
+    align-items: center;
+    text-align: center;
+    justify-content: center center center/cover;
+    font-family: 'Balthazar', serif;
+    font-size: 2rem;
+    margin-bottom: auto;
+}
+
+p {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center center center/cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* FOR button (ORDER NOW) */
+
+.btn {
+    padding: 23px 45px;
+    font-family: 'Balthazar', serif;
+    margin: 34px;
+    font-size: 45px;
+    border-radius: 50px;
+    color: black;
+    background-color: rgb(240, 18, 18);
+    cursor: pointer;
+}
+
+.btn :hover {
+    background-color: rgba(7, 243, 58, 0.979);
+}
+
+.container {
+    border: 1px solid black;
+    background-color: rgb(209, 194, 175);
+    display: flex;
+    padding: 4px auto;
+    margin: auto 1px;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 80px;
+    width: fit-content;
+    height: 180px;
+    padding: 4px 12px;
+    margin: 3px, 15px;
+    /* background-color: rgb(241, 137, 0); */
+    color: rgb(233, 31, 31);
+    text-align: center;
+    align-items: center;
+    font-size: 1px;
+}
+
+
+/* heading color for all boxess */
+
+#heading {
+    color: black
+}
+
+
+/* title for all servicess */
+
+.h3secend {
+    display: flex;
+}
+
+#Services {
+    border: 3px solid rgb(100, 99, 99);
+    background-color: chartreuse;
+    border-width: auto;
+    border-radius: 70px;
+    font-size: 10rem;
+    margin: -2px 1600px;
+    font-family: 'Balthazar', serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center center center/cover;
+}
+
+#box1 {
+    background: no-repeat center url('pizza.jpg.jpg');
+}
+
+#box2 {
+    background: no-repeat center url('bg1.jpg.png');
+}
+
+#box3 {
+    background: no-repeat center url('ice-cream-1544475_1280.png');
+}
